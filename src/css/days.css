@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.Day{
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+}
+.orange{
+    color: orange;
+  }
+  .form{
+    margin: 0;
+    padding: 16px 0; 
+    text-align: center;
+  }
+  .input{
+    margin: 6px 0;
+    padding: 16px; 
+    width: 560px;
+    background-color: #F1F3F4;
+    border: none;
+    border-radius: 22px;
+    box-shadow: none;
+    font-size: 14px;
+    outline: none;
+    overflow-x: hidden;
+    opacity: 0.95;
+    transition: background-color 300ms ease-in-out;
+    transition: opacity 200ms;    
+    transition: box-shadow 200ms;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);     
+  }
+  .input:focus{
+    opacity: 1;
+    transition: background-color 300ms ease-in-out;
+    transition: opacity 200ms;
+    transition: box-shadow 200ms;
+    box-shadow: none;     
+  }
+  .btn{
+    margin: 0 8px;
+    padding: 16px;
+    background:rgb(22, 124, 219);
+    border-radius: 22px;
+    color: white;
+    border: none;    
+    box-shadow: none;
+    font-size: 14px;
+    letter-spacing: 2px;    
+    font-stretch: ultra-expanded;
+    outline: none; 
+    box-shadow: 2px 3px 3px 2px rgba(126, 135, 138, 0.16), 0 0 0 2px rgb(22, 124, 219); 
+    opacity: 0.9;
+    transition: background-color 300ms ease-in-out;    
+    transition: opacity 200ms;     
+    transition: box-shadow 200ms;
+  }
+  
+  .btn:hover{    
+    outline: none;
+    opacity: 1;
+    box-shadow: none; 
+    cursor: pointer;
+  }
+  .btn:active{ 
+    background-color: rgb(56, 143, 224);
+    outline: none;    
+  }
+
+  .task-title{
+    margin: 0;
+    padding: 12px 0;
+    text-align: center;
+    font-family: 'Fredericka the Great', 'Cabin Sketch',cursive;
+    color: grey;
+    letter-spacing: 2px;
+
+  }
+  .noteList{
+    width: 580px;
+    margin: 0 auto;
+    padding: 0;
+    /*list-style: none;*/
+  }
+  .noteList-note{
+    display: flex;
+    direction: row;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    align-content: center;
+    width: 100%;
+    margin: 8px 0;
+    padding: 16px 16px;
+    background: #F1F3F4;
+    border: none;
+    border-radius: 22px;
+    box-shadow: none;
+    font-size: 14px;
+    outline: none;
+  }
+  .noteList-note-priority-hight {    
+    background: rgba(253, 249, 28, 0.76);
+    transition: ease-in-out 750ms;
+  }
+  .noteList-note-done {    
+    background: rgba(81, 235, 50, 0.678);
+    text-decoration-line: line-through;
+    transition: ease-in-out 750ms;
+  }
+  .note-item{
+    width: 100%;
+    flex-grow: 3;
+    margin: 0;
+    padding: 0 ;
+  }
+  .note-button{
+    width: 60%;
+    text-align: right;
+    vertical-align: baseline;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0 0 0 16px;
+    
+  }
+  .btn-priority{
+    margin: 0 6px;
+    padding: 0;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .checked {
+    margin: 0 6px;
+    padding: 0;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: none;
+    color: orange;
+    cursor: pointer;
+  }
+  .btn-done{
+    margin: 0 ;
+    padding: 4px 12px;    
+    font-size: 12px;    
+    border: none;
+    outline: none;
+    background-color:rgb(22, 219, 65);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .ico-done{
+    margin: 0 6px 0 0;
+    padding: 0 ;    
+    font-size: inherit;
+  }
+  .btn-delete{
+    margin: 0 ;
+    padding: 4px 12px;    
+    font-size: 12px;    
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 790px) {
+    .form{
+      margin: 0;
+      padding: 16px 0; 
+      text-align: center;
+    }
+    .input{
+      margin: 0;
+      padding: 16px; 
+      width: 80%;
+      font-size: 16px;
+      overflow: scroll ;      
+    }
+    
+    .btn{
+      margin: 16px 8px;
+      padding: 16px;
+     
+    }
+    .noteList{
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .btn-priority{
+      margin: 6px ;
+      padding: 6px;
+    }
+    .checked {
+      margin: 6px;
+      padding: 6px;
+    }
+    .btn-done{
+      margin: 6px auto;
+      padding: 6px 12px;   
+      
+    }
+    .btn-delete{
+      margin: 6px auto;
+      padding: 6px 12px;
+    }
+    
+  }

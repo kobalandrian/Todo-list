@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+.Nav {
+    margin: 0;
+    padding: 0 20px;
+    width: 29.9999%;
+    height: 100%;
+    background: #f1f1f1;
+    background-repeat: repeat-x;
+    position: relative;
+  }
+  .nav-title{
+    margin: 0;
+    padding: 16px 0; 
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(226, 83, 83);
+  }
+  .btn-nav{    
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 24px;
+  }
+  .blue{
+    color: rgb(65, 116, 184) !important;
+  }
+  .pink{
+    color: rgb(199, 101, 194);
+  }
+  .orange{
+    color: rgb(211, 137, 77);
+  }
+  .yellow{
+    color: rgb(143, 134, 16);
+  }
+  .green{
+    color: rgb(79, 206, 47);
+  }
+  .red{
+    color: red;
+  }
+  .sea{
+    color: rgb(47, 206, 193);
+  }
+  .fiolet{
+    color: rgb(103, 47, 206);
+  }
+  .nav-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .nav-list-item{
+    margin: 0;
+    padding: 8px 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+   .link{
+    width: 100%;
+    margin: 0;
+    padding: 8px 16px;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+  }
+  .nav-list-item>.l-blue:hover {
+    background: rgb(65, 116, 184);
+    color:white;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  .nav-list-item>.l-red:hover {
+    background: red;
+    color:white;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  .nav-list-item>.l-fiolet:hover{
+    background: rgb(103, 47, 206);
+    color:white;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  .nav-list-item>.l-green:hover{
+    background: rgb(79, 206, 47);
+    color:white;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  .nav-list-item>.l-orange:hover{
+    background:  rgb(211, 137, 77);
+    color:white;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  .nav-list-item>.l-pink:hover{
+    background:rgb(199, 101, 194);
+    color:white;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  .nav-list-item>.l-sea:hover{
+    background:  rgb(47, 206, 193);
+    color:white;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+.link-blue{
+  background: rgb(65, 116, 184);
+  color:white;
+  border-radius: 22px;
+}
+.link-red{
+  background:red;
+  color:white;
+  border-radius: 22px;
+}
+.link-fiolet{
+  background: rgb(103, 47, 206);
+  color:white;
+  border-radius: 22px;
+}
+.link-green{
+  background:rgb(79, 206, 47);
+  color:white;
+  border-radius: 22px;
+}
+.link-orange{
+  background:  rgb(211, 137, 77);
+  color:white;
+  border-radius: 22px;
+}
+.link-pink{
+  background:rgb(199, 101, 194);
+    color:white;
+    border-radius: 22px;
+}
+.link-sea{
+  background: rgb(47, 206, 193);
+  color:white;
+  border-radius: 22px;
+}
+.width100{
+  display: inline-block;
+  width: 85%;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar{
+    margin: 16px auto;
+    padding: 8px; 
+    width:100%;
+    border-radius: 22px;
+    border: none;
+    overflow: hidden;
+  }
+
+.footer{
+    margin: 0 auto;
+    padding: 24px 0;
+    text-align: center;
+    text-decoration-line: none; 
+    font-size: 12px;
+    color: inherit;
+  }
+  .footer-a{
+    color: inherit;
+    text-decoration-line: none;
+}
+.footer-a:hover{
+  color: inherit;
+  text-decoration-line: none;
+  text-shadow: 2px -1px rgb(88, 87, 87); 
+}
+
+@media screen and (max-width: 790px) {
+  .Nav {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .btn-nav{
+    display: block;
+    margin: 0;
+    padding: 28px 24px 16px 16px;
+  }
+  .btn-nav-line {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+  }
+  .nav-list{
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  .nav-list .show{
+    display: block;
+  }
+  .calendar{
+    display: none;
+  }
+  .footer{
+    display: none;
+  }
+}

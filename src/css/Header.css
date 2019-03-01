@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+.Header {
+    margin: 0 auto;
+    padding: 0 22px;
+    width: 69.9999%;
+  }
+  .header-title{
+    margin: 0 auto;
+    padding: 12px 0; 
+    text-align: center;
+    color: rgb(30, 255, 0);
+    font-size: 42px;
+    font-weight: 700;
+  }
+  .red{
+    color: red;
+  }
+  .yellow{
+    color: yellow;
+  }
+  .blue{
+    color: rgb(55, 116, 231);
+  }
+  .orange{
+    color: orange;
+  }
+  .hr{
+    margin: 0 auto;
+    padding: 2px 0;
+    width: 23%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: red;
+    background-image: linear-gradient(to right,red ,yellow);
+    /* clip-path: polygon(0 0%, 100% 100%, 100% 100%, 0 100%);*/
+    clip-path: polygon(0 0%, 100% 100%, 0 100%, 0 100%);
+    transform: rotate(-1.6deg);
+  }
+
+  @media screen and (max-width: 790px) {
+    .Header {
+      margin: 0;
+      padding: 0 22px;
+      width: 100%;
+    }
+    .hr{
+      margin: 0 auto;
+      padding: 2px 0;
+      width: 53%;
+      
+    }
+  }
